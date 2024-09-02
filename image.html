@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="image-style.css">
+</head>
+<body>
+    
+
+    <section class="products">
+        <div class="slider">
+            <div class="slides">
+                <img src="" alt="no image" id="image1">
+                <img src="lam3sdeb.2_medium_.jpg" alt="no image" style="position: relative; top: -50%; overflow: hidden; z-index: -0;" srcset="">
+                <div class="content1 active">
+                    <h1>Sofa</h1>
+                    <p>4-Seater Sofa with chaise-longue,Teak Wood</p>
+                    <button class="btn">Purchase</button>
+                    <h4>$249</h4>
+                </div>
+            </div>
+
+            <div class="slides">
+                <img src="" alt="no image" id="image2">
+                <img src="lam3sdeb.2_medium_.jpg" alt="no image" style="position: relative; top: -50%; overflow: hidden; z-index: -0;" srcset="">
+                <div class="content1">
+                    <h1>Chair</h1>
+                    <p>Single Sofa with chaise-longue,European Oak Wood</p>
+                    <button class="btn">Purchase</button>
+                    <h4>$54</h4>
+                </div>
+            </div>
+
+            <div class="slides">
+                <img src="" alt="no image" id="image3">
+                <img src="lam3sdeb.2_medium_.jpg" alt="no image" style="position: relative; top: -50%; overflow: hidden; z-index: -0;" srcset="">
+                <div class="content1">
+                    <h1>GIE EL GLASS</h1>
+                    <p>Elegant Rugs with more space with unique designs.</p>
+                    <button class="btn">Purchase</button>
+                    <h4>$499</h4>
+                </div>
+            </div>
+
+            <div class="slides">
+                <img src="" alt="no image" id="image4">
+                <img src="lam3sdeb.2_medium_.jpg" alt="no image" style="position: relative; top: -50%; overflow: hidden; z-index: -0;" srcset="">
+                <div class="content1">
+                    <h1>Table lamps</h1>
+                    <p>Softer lights reduce harsh shadows in our home</p>
+                    <button class="btn">Purchase</button>
+                    <h4>$599</h4>
+                </div>
+            </div>
+
+            <!-- <div class="slides">
+                <img src="" alt="no image" id="image5">
+                <img src="lam3sdeb.2_medium_.jpg" alt="rugs" style="position: relative; top: -50%; overflow: hidden; z-index: -0; width: 50%;" srcset="">
+                <div class="content1">
+                    <h1>Rugs</h1>
+                    <p>Add warmth,comfort to room with diverse designs and textures.</p>
+                    <button class="btn">Purchase</button>
+                    <h4>$999</h4>
+                </div>
+            </div> -->
+
+            <div class="slides">
+                <img src="" alt="no image" id="image6">
+                <img src="lam3sdeb.2_medium_.jpg" alt="no image" style="position: relative; top: -50%; overflow: hidden; z-index: -0;" srcset="">
+                <div class="content1">
+                    <h1>Timber decor</h1>
+                    <p>Natural warmth and rustic charm to its versatile and timeless appeal.</p>
+                    <button class="btn">Purchase</button>
+                    <h4>$500</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <span onclick="changeImage()" class="prev"></span>
+            <span onclick="changeImage()" class="next"></span>
+        </div>
+    </section>
+    
+    
+  
+
+
+<script>
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    let slider = document.querySelector('.slider');
+
+next.addEventListener('click',function(){
+    let slides = document.querySelectorAll('.slides');
+    slider.appendChild(slides[0]);
+})
+prev.addEventListener('click',function(){
+    let slides = document.querySelectorAll('.slides');
+    slider.prepend(slides[slides.length - 1]);
+})
+
+
+
+
+function changeImage(){
+    var img = document.getElementById('image1');
+    img.src = 'Downloader-La-605068.jpg.jpg';
+    // var img = document.getElementById('image2');
+    // img.src = 'img2.jpg';
+    // var img = document.getElementById('image3');
+    // img.src = 'img3.jpg';
+    // var img = document.getElementById('image4');
+    // img.src = 'img4.jpg';
+    // var img = document.getElementById('image5');
+    // img.src = 'rugs.jpg';
+    // var img = document.getElementById('image6');
+    // img.src = 'img6.jpg';
+}
+</script>
+
+</body>
+</html>
